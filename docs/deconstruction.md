@@ -71,5 +71,3 @@ if (person is Person(var first, var last))
 Modern C# is designed for clarity and intent.
 
 ------------------------------------------------------------------------
-
-👉 Are you using deconstruction beyond tuples in your projects?
