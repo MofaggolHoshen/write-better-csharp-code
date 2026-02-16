@@ -21,6 +21,37 @@ Learn how to use deconstruction beyond tuples in C#. Discover how it works with 
 
 ---
 
+### 🔐 C# 11 `required` Keyword
+
+Learn how `required` enforces initialization of important properties, how constructors interact with it, and when to use `[SetsRequiredMembers]` to keep the compiler happy.
+
+- **📖 Documentation:** [docs/required-keyword.md](docs/required-keyword.md)
+- **💻 Code Example:** [source/required-keyword.cs](source/required-keyword.cs)
+- **▶️ Run:** `cd source && dotnet run required-keyword.cs`
+
+**What you'll learn:**
+- Why `required` prevents partially initialized objects
+- Object initializers vs. constructors
+- Using `[SetsRequiredMembers]` correctly
+- Practical DTO usage patterns
+
+---
+
+### 📦 Multiple NuGet Sources in Single-File Apps
+
+See how to restore packages from nuget.org and a private feed in a single-file C# app using `#:property RestoreAdditionalProjectSources`.
+
+- **📖 Documentation:** [docs/multiple-nuget-sources-in-sigle-file-app.md](docs/multiple-nuget-sources-in-sigle-file-app.md)
+- **💻 Code Example:** [source/multiple-nuget-sources-in-sigle-file-app.cs](source/multiple-nuget-sources-in-sigle-file-app.cs)
+- **▶️ Run:** `cd source && dotnet run multiple-nuget-sources-in-sigle-file-app.cs`
+
+**What you'll learn:**
+- Adding extra package sources in a single file
+- Authenticating against private feeds
+- When to use `nuget.config` instead
+
+---
+
 ## 🚀 Getting Started
 
 Each topic includes:
