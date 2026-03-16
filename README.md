@@ -68,6 +68,21 @@ Learn how to create robust, type-safe ID types that prevent bugs and improve cod
 
 ---
 
+### ⚡ Blazor vs React
+
+Choosing between Blazor and React for your next web project? This guide compares both frameworks across language, ecosystem, component model, state management, performance, and developer experience — helping you make the right call for your team.
+
+- **📖 Documentation:** [docs/blazor-vs-react.md](docs/blazor-vs-react.md)
+
+**What you'll learn:**
+- When to choose Blazor vs React
+- Hosting models: Blazor Server, WebAssembly, and Auto
+- Component model, state management, and interop patterns
+- Side-by-side code comparisons (C# Razor vs TypeScript JSX)
+- Tooling, testing, and ecosystem differences
+
+---
+
 ### 🔤 String Comparison Best Practices
 
 Master the art of string comparison in C#. Learn about different comparison methods, culture-sensitive operations, and performance implications.
