@@ -1,6 +1,6 @@
 # Write Better C# Code
 
-A practical guide to clean, maintainable, and production-ready C# code. This repository demonstrates modern C# best practices, architectural patterns, performance optimization techniques, and real-world examples to help developers write professional-grade .NET applications.
+A practical guide to clean, maintainable, and production-ready C# code. This repository demonstrates modern C# best practices, architectural patterns, performance optimization techniques, and real-world examples.
 
 ## 📚 Topics
 
@@ -41,14 +41,45 @@ Learn how `required` enforces initialization of important properties, how constr
 
 See how to restore packages from nuget.org and a private feed in a single-file C# app using `#:property RestoreAdditionalProjectSources`.
 
-- **📖 Documentation:** [docs/multiple-nuget-sources-in-sigle-file-app.md](docs/multiple-nuget-sources-in-sigle-file-app.md)
-- **💻 Code Example:** [source/multiple-nuget-sources-in-sigle-file-app.cs](source/multiple-nuget-sources-in-sigle-file-app.cs)
-- **▶️ Run:** `cd source && dotnet run multiple-nuget-sources-in-sigle-file-app.cs`
+- **📖 Documentation:** [docs/multiple-nuget-sources-in-single-file-app.md](docs/multiple-nuget-sources-in-single-file-app.md)
+- **💻 Code Example:** [source/multiple-nuget-sources-in-single-file-app.cs](source/multiple-nuget-sources-in-single-file-app.cs)
+- **▶�� Run:** `cd source && dotnet run multiple-nuget-sources-in-single-file-app.cs`
 
 **What you'll learn:**
 - Adding extra package sources in a single file
 - Authenticating against private feeds
 - When to use `nuget.config` instead
+
+---
+
+### 🏷️ Strongly Typed IDs Guide
+
+Learn how to create robust, type-safe ID types that prevent bugs and improve code clarity. Discover patterns for implementing strongly typed IDs with value objects, records, and source generators.
+
+- **📖 Documentation:** [docs/strongly-typed-id-guide.md](docs/strongly-typed-id-guide.md)
+- **💻 Code Example:** [source/strongly-typed-id.cs](source/strongly-typed-id.cs)
+- **▶️ Run:** `cd source && dotnet run strongly-typed-id.cs`
+
+**What you'll learn:**
+- Why primitive obsession is problematic
+- Implementing strongly typed IDs with records
+- Using source generators for ID types
+- Performance considerations and best practices
+
+---
+
+### 🔤 String Comparison Best Practices
+
+Master the art of string comparison in C#. Learn about different comparison methods, culture-sensitive operations, and performance implications.
+
+- **💻 Code Example:** [source/CompareStrings.cs](source/CompareStrings.cs)
+- **▶️ Run:** `cd source && dotnet run CompareStrings.cs`
+
+**What you'll learn:**
+- Ordinal vs. culture-sensitive comparisons
+- Case-sensitive and case-insensitive operations
+- Performance characteristics of different methods
+- When to use StringComparison enumeration
 
 ---
 
