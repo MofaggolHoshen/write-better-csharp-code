@@ -41,9 +41,9 @@ Learn how `required` enforces initialization of important properties, how constr
 
 See how to restore packages from nuget.org and a private feed in a single-file C# app using `#:property RestoreAdditionalProjectSources`.
 
-- **📖 Documentation:** [docs/multiple-nuget-sources-in-single-file-app.md](docs/multiple-nuget-sources-in-single-file-app.md)
-- **💻 Code Example:** [source/multiple-nuget-sources-in-single-file-app.cs](source/multiple-nuget-sources-in-single-file-app.cs)
-- **▶�� Run:** `cd source && dotnet run multiple-nuget-sources-in-single-file-app.cs`
+- **📖 Documentation:** [docs/multiple-nuget-sources-in-sigle-file-app.md](docs/multiple-nuget-sources-in-sigle-file-app.md)
+- **💻 Code Example:** [source/multiple-nuget-sources-in-sigle-file-app.cs](source/multiple-nuget-sources-in-sigle-file-app.cs)
+- **▶️ Run:** `cd source && dotnet run multiple-nuget-sources-in-sigle-file-app.cs`
 
 **What you'll learn:**
 - Adding extra package sources in a single file
@@ -65,6 +65,51 @@ Learn how to create robust, type-safe ID types that prevent bugs and improve cod
 - Implementing strongly typed IDs with records
 - Using source generators for ID types
 - Performance considerations and best practices
+
+---
+
+### 🏗️ SOLID Design Principles
+
+Learn the five foundational object-oriented design principles that lead to maintainable, extensible, and testable C# code.
+
+- **📖 Documentation:** [docs/solid.md](docs/solid.md)
+- **💻 Code Example:** [source/design-pattern/solid.cs](source/design-pattern/solid.cs)
+
+**What you'll learn:**
+- Single Responsibility Principle (SRP)
+- Open/Closed Principle (OCP)
+- Liskov Substitution Principle (LSP)
+- Interface Segregation Principle (ISP)
+- Dependency Inversion Principle (DIP)
+
+---
+
+### 🔀 Union Types in C# 15
+
+Explore the new union types feature in C# 15 (.NET 11 preview). Learn how to declare a closed set of types and leverage exhaustive pattern matching enforced by the compiler.
+
+- **💻 Code Example:** [source/union-type.cs](source/union-type.cs)
+- **▶️ Run:** `cd source && dotnet run union-type.cs`
+
+**What you'll learn:**
+- What union types are and how they differ from interfaces/abstract classes
+- Declaring unions and the compiler-enforced exhaustive switch
+- Runtime polyfill usage before .NET 11 ships natively
+
+---
+
+### ⚡ DI: Constructor vs Action Method Injection Benchmark
+
+Benchmark the memory and time overhead of constructor injection versus action method injection (`[FromServices]`) in ASP.NET Core controllers.
+
+- **📖 Documentation:** [docs/benchmark-di-constructor-vs-action-method.md](docs/benchmark-di-constructor-vs-action-method.md)
+- **💻 Code Example:** [source/banchmark-di-method-controller.cs](source/banchmark-di-method-controller.cs)
+- **▶️ Run:** `cd source && dotnet run --configuration Release banchmark-di-method-controller.cs`
+
+**What you'll learn:**
+- When to prefer constructor injection vs action method injection
+- How BenchmarkDotNet measures allocation and throughput
+- Practical guidance based on benchmark results
 
 ---
 
