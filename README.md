@@ -68,19 +68,19 @@ Learn how to create robust, type-safe ID types that prevent bugs and improve cod
 
 ---
 
-### 🏗️ SOLID Design Principles
+### ⚡ DI: Constructor vs Action Method Injection Benchmark
 
-Learn the five foundational object-oriented design principles that lead to maintainable, extensible, and testable C# code.
+Benchmark the memory and time overhead of constructor injection vs. `[FromServices]` action-method injection in ASP.NET Core controllers using BenchmarkDotNet.
 
-- **📖 Documentation:** [docs/solid.md](docs/solid.md)
-- **💻 Code Example:** [source/design-pattern/solid.cs](source/design-pattern/solid.cs)
+- **📖 Documentation:** [docs/benchmark-di-constructor-vs-action-method.md](docs/benchmark-di-constructor-vs-action-method.md)
+- **💻 Code Example:** [source/banchmark-di-method-controller.cs](source/banchmark-di-method-controller.cs)
+- **▶️ Run:** `cd source && dotnet run --configuration Release banchmark-di-method-controller.cs`
 
 **What you'll learn:**
-- Single Responsibility Principle (SRP)
-- Open/Closed Principle (OCP)
-- Liskov Substitution Principle (LSP)
-- Interface Segregation Principle (ISP)
-- Dependency Inversion Principle (DIP)
+- How constructor injection resolves dependencies once per request
+- How `[FromServices]` resolves dependencies per action call
+- DI resolution overhead measured with BenchmarkDotNet
+- When to prefer each approach
 
 ---
 
@@ -98,21 +98,6 @@ Explore the new union types feature in C# 15 (.NET 11 preview). Learn how to dec
 
 ---
 
-### ⚡ DI in Controller Constructor vs Action Method — Benchmark
-
-Benchmark the memory and time overhead of constructor injection vs. `[FromServices]` action-method injection in ASP.NET Core controllers using BenchmarkDotNet.
-
-- **📖 Documentation:** [docs/benchmark-di-constructor-vs-action-method.md](docs/benchmark-di-constructor-vs-action-method.md)
-- **💻 Code Example:** [source/banchmark-di-method-controller.cs](source/banchmark-di-method-controller.cs)
-
-**What you'll learn:**
-- How constructor injection resolves dependencies once per request
-- How `[FromServices]` resolves dependencies per action call
-- DI resolution overhead measured with BenchmarkDotNet
-- When to prefer each approach
-
----
-
 ### 🔤 String Comparison in .NET
 
 Explore the different string comparison methods in .NET and understand when to use each one for correct, performant, and culture-aware results.
@@ -125,36 +110,6 @@ Explore the different string comparison methods in .NET and understand when to u
 - `String.CompareOrdinal` for culture-insensitive byte-level comparison
 - `String.CompareTo` for instance-based comparisons
 - Choosing the right `StringComparison` option (`Ordinal`, `CurrentCulture`, `OrdinalIgnoreCase`, etc.)
-
----
-
-### ⚡ DI: Constructor vs Action Method Injection Benchmark
-
-Benchmark the memory and time overhead of constructor injection versus action method injection (`[FromServices]`) in ASP.NET Core controllers.
-
-- **📖 Documentation:** [docs/benchmark-di-constructor-vs-action-method.md](docs/benchmark-di-constructor-vs-action-method.md)
-- **💻 Code Example:** [source/banchmark-di-method-controller.cs](source/banchmark-di-method-controller.cs)
-- **▶️ Run:** `cd source && dotnet run --configuration Release banchmark-di-method-controller.cs`
-
-**What you'll learn:**
-- When to prefer constructor injection vs action method injection
-- How BenchmarkDotNet measures allocation and throughput
-- Practical guidance based on benchmark results
-
----
-
-### 🔤 String Comparison Best Practices
-
-Master the art of string comparison in C#. Learn about different comparison methods, culture-sensitive operations, and performance implications.
-
-- **💻 Code Example:** [source/CompareStrings.cs](source/CompareStrings.cs)
-- **▶️ Run:** `cd source && dotnet run CompareStrings.cs`
-
-**What you'll learn:**
-- Ordinal vs. culture-sensitive comparisons
-- Case-sensitive and case-insensitive operations
-- Performance characteristics of different methods
-- When to use StringComparison enumeration
 
 ---
 
