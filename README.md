@@ -98,7 +98,23 @@ Explore the new union types feature in C# 15 (.NET 11 preview). Learn how to dec
 
 ---
 
-### 🔤 String Comparison in .NET
+### � Single-File Apps Split Across Files
+
+Learn how to use the experimental `#:include` directive (.NET 11 Preview 3) to split a file-based program across multiple `.cs` files while still running it with `dotnet run`.
+
+- **📖 Documentation:** [docs/single-file-apps-split-across-files.md](docs/single-file-apps-split-across-files.md)
+- **💻 Code Example:** [source/single-file-apps-split-across-files/app/app.cs](source/single-file-apps-split-across-files/app/app.cs)
+- **▶️ Run:** `cd source/single-file-apps-split-across-files/app && dotnet run app.cs`
+
+**What you'll learn:**
+- Using `#:include` to split a single-file app into multiple files
+- Opting in to the experimental feature with `#:property ExperimentalFileBasedProgramEnableIncludeDirective=true`
+- Organising models and services across folders without a `.csproj`
+- Ordering rules for `#:property` and `#:include` directives
+
+---
+
+### �🔤 String Comparison in .NET
 
 Explore the different string comparison methods in .NET and understand when to use each one for correct, performant, and culture-aware results.
 
