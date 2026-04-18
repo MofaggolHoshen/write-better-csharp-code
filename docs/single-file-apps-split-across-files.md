@@ -1,5 +1,8 @@
 # Single-File Apps Split Across Files
 
+> **Preview feature — .NET 11 Preview 3**
+> The `#:include` directive was introduced in [.NET 11 Preview 3](https://github.com/dotnet/core/blob/main/release-notes/11.0/preview/preview3/sdk.md#file-based-apps-can-be-split-across-files) ([dotnet/sdk #52347](https://github.com/dotnet/sdk/pull/52347)). It is experimental and subject to change before the final .NET 11 release. Roslyn editor completion for the directive was also added in the same preview ([dotnet/roslyn #82625](https://github.com/dotnet/roslyn/pull/82625)).
+
 In .NET, you can write a complete application in a single `.cs` file using [file-based programs](https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-programs). However, as your app grows, a single file can become hard to manage. The `#:include` directive lets you split the code into multiple files while still running it as a single-file app with `dotnet run`.
 
 ## The Experimental Feature Error
