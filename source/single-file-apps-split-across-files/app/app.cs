@@ -1,4 +1,5 @@
 
+// -------------------------------------------------------------------------
 // How to run:
 //   dotnet run app.cs
 //
@@ -6,6 +7,7 @@
 //   - .NET 10 SDK or later (file-based programs with #:include support)
 //   - Run from the directory containing app.cs:
 //       cd source/single-file-apps-split-across-files/app
+// -------------------------------------------------------------------------
 
 #:property ExperimentalFileBasedProgramEnableIncludeDirective=true
 
