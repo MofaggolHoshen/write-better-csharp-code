@@ -1,3 +1,12 @@
+
+// How to run:
+//   dotnet run app.cs
+//
+// Requirements:
+//   - .NET 10 SDK or later (file-based programs with #:include support)
+//   - Run from the directory containing app.cs:
+//       cd source/single-file-apps-split-across-files/app
+
 #:property ExperimentalFileBasedProgramEnableIncludeDirective=true
 
 #:include ../models/IPerson.cs
